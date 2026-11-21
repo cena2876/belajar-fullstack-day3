@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catat Cuan — Full Stack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <h1>Catat Cuan</h1>
+      <p>Kelola pemasukan & pengeluaran harianmu</p>
+    </header>
+
+    <div class="saldo-card">
+      <span>Sisa Saldo Saat Ini</span>
+      <h2 id="sisaSaldo">Rp 0</h2>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="namaItem" placeholder="Keterangan (misal: Gaji, Nasi Padang)">
+      <input type="number" id="nominal" placeholder="Nominal (Rp)">
+      
+      <div class="btn-row">
+        <button id="btnMasuk" class="btn-masuk">+ Pemasukan</button>
+        <button id="btnKeluar" class="btn-keluar">- Pengeluaran</button>
+      </div>
+    </div>
+
+    <div class="riwayat-section">
+      <h3>Riwayat Transaksi</h3>
+      <ul id="daftarTransaksi"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
